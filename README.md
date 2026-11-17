@@ -21,13 +21,14 @@ The experiments examine training and test errors in
 the underparameterized, interpolation, and
 overparameterized regimes.
 
+
 ## MATLAB Scripts
 
-- `coneintwithallmodif.m` — Gaussian kernel experiment.
-- `cone_matern32.m` — Matern 3/2 kernel experiment.
-- `saddleinwithallmodif.m` — Multiquadric kernel experiment.
-- `compare_gaussian_matern.m` — Comparison of Gaussian
-  and Matern 3/2 test errors.
+- `cone_gaussian.m` — Gaussian kernel with the cone function.
+- `cone_matern32.m` — Matern 3/2 kernel with the cone function.
+- `saddle_multiquadric.m` — Multiquadric kernel with the saddle function.
+- `compare_gaussian_matern.m` — Comparison of Gaussian and Matern 3/2 test errors.
+
 
 ## Reproducing the Results
 
