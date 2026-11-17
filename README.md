@@ -32,6 +32,26 @@ overparameterized regimes.
 
 ## Reproducing the Results
 
+### Saving the numerical results
+
+After running `cone_gaussian.m`, execute:
+
+```matlab
+save('gaussian_results.mat', 'M_list', 'err_test_fix', 'err_test_adap')
+```
+
+After running `cone_matern32.m`, execute:
+
+```matlab
+save('matern32_results.mat', 'M_list', 'err_test_fix', 'err_test_adap')
+```
+
+Then run `compare_gaussian_matern.m` to reproduce the
+Gaussian versus Matern 3/2 comparison figure.
+
+The repository also includes the saved `.mat` results files.
+
+
 1. Open MATLAB.
 2. Run `coneintwithallmodif.m`.
 3. Save the resulting test-error arrays as
