@@ -1,2 +1,51 @@
-# kernel-double-descent-thesis
-MATLAB numerical experiments for double descent in kernel-based approximation
+
+# The Double Descent Phenomenon in Kernel-Based Approximation
+
+MATLAB numerical experiments accompanying the Master's thesis
+"The Double Descent Phenomenon in Kernel-Based Approximation"
+at the University of Padova.
+
+## Numerical Experiments
+
+The repository contains experiments investigating the
+behaviour of kernel-based approximation as the number
+of kernel centres increases.
+
+Three kernel-function configurations are considered:
+
+1. Gaussian kernel with the cone function.
+2. Matern 3/2 kernel with the cone function.
+3. Multiquadric kernel with the saddle function.
+
+The experiments examine training and test errors in
+the underparameterized, interpolation, and
+overparameterized regimes.
+
+## MATLAB Scripts
+
+- `coneintwithallmodif.m` — Gaussian kernel experiment.
+- `cone_matern32.m` — Matern 3/2 kernel experiment.
+- `saddleinwithallmodif.m` — Multiquadric kernel experiment.
+- `compare_gaussian_matern.m` — Comparison of Gaussian
+  and Matern 3/2 test errors.
+
+## Reproducing the Results
+
+1. Open MATLAB.
+2. Run `coneintwithallmodif.m`.
+3. Save the resulting test-error arrays as
+   `gaussian_results.mat`.
+4. Run `cone_matern32.m`.
+5. Save the resulting test-error arrays as
+   `matern32_results.mat`.
+6. Run `compare_gaussian_matern.m` to generate the
+   comparison figure.
+
+The experiments use a fixed random seed to support
+reproducibility.
+
+## Notes
+
+The reported results correspond to individual numerical
+realizations and should not be interpreted as universal
+performance rankings of the kernels.
